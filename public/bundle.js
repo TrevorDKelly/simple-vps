@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{document.querySelector("form").addEventListener("submit",(t=>{t.preventDefault(),formData=new FormData(t.target),data={};for(let t of formData.entries())data[t[0]]=t[1];fetch("http://localhost:3001",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})}))}));
