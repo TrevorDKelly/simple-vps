@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       data[pair[0]] = pair[1];
     }
 
-    fetch("http://localhost:3001", {
+    fetch(form.action, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
